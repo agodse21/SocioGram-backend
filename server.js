@@ -27,7 +27,8 @@ app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
 app.get("/", (req, res) => {
-  res.send("Home");
+  res.send("Home Route");
+
 });
 
 app.use("/auth", AuthRouter);
